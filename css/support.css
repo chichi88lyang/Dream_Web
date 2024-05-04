@@ -1,0 +1,190 @@
+#D{
+    font-size: 50px;
+    background: black;
+    display: none;
+    position: relative;
+    height: 140vh;
+    color: white;
+    overflow: hidden;
+}
+
+/* Your Order Number is: 8046925320 */
+
+#D h1{
+    padding-bottom: 50px;
+    margin-top: 8%;
+    color: goldenrod;
+    font-size: 80px;
+    animation: 2s fadeIn;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+#D h1 i{
+    color: gray;
+    font-size: 35px;
+}
+
+#D #p{
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    display: block;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-bottom: 8vh;
+    
+}
+
+#D form{
+    background-color: rgb(35, 34, 34);
+    display: block;
+    width: 20vw;
+    margin-left: 38vw;
+    padding: 20px 0;
+    border-radius: 30px;
+    animation: 4s fade linear infinite;
+    animation-fill-mode: both;
+    visibility: hidden;
+
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0.8;
+    }
+    30% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(79, 75, 75);
+    }
+    50% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(245, 231, 231);
+    }
+    80% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(99, 94, 94);
+    }
+    100% {
+      visibility: visible;
+      opacity: 0.8;
+    }
+  }
+
+
+#D footer{
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 800px){
+    #D{
+        height: 115vh;
+    }
+    
+    #D h1{
+        padding-bottom: 50px;
+        font-size: 35px;
+    }
+    #D h1 i{
+        color: gray;
+        font-size: 20px;
+    }
+    
+    #D #p{
+        font-size: 25px;
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    #D form{
+        display: block;
+        width: 30vw;
+        margin-left: 35vw;
+        padding: 8px 0;
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    #D{
+        height: 130vh;
+    }
+
+    #D h1{
+        padding-bottom: 20px;
+    }
+    #D h1 i{
+        color: gray;
+        font-size: 15px;
+    }
+    
+    #D p{
+        font-size: 18px;
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        line-height: 22px;
+        letter-spacing: 1.5px;
+        
+    }
+
+    
+    #D form{
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        padding: 15px 0;
+        border-radius: 35px;
+    }
+
+    /* FOOTER */
+        #D footer{
+            margin-left: 10%;
+        }
+        #D ul{
+           display: block;
+             word-wrap: break-word;
+             width: 80vw;
+         }
+        #D footer li{
+            border-right: none;
+            border-left: 1px solid gray;
+            padding: 5px;
+        }
+        #D footer p{
+            font-size: 20px;
+            padding: 15px 0;
+            width: 80vw;
+            margin: 0;
+        }
+}
+
+
+/* 
+#E{
+    padding: 2em;
+    color: white;
+    background: black;
+    display: none;
+    position: relative;
+    padding: 5em 2em;
+    height: 100vh;
+    
+} */

@@ -1,0 +1,53 @@
+
+#C{
+    background: black; 
+    position: relative;
+    display: none;
+    padding: 5em 5vw;
+    height: 100vh;
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+#C h1{
+    
+    margin-bottom: 250px;
+}
+
+@media only screen and (max-width: 600px){
+    #C{
+        font-size: 30px;
+        padding: 200px 0 0 0;
+    }
+  
+    #C ul{
+        display: block;
+        
+    }
+    
+   
+/* Footer */
+
+#C footer{
+    margin-left: 10%;
+}
+#C ul{
+   display: block;
+     word-wrap: break-word;
+     width: 80vw;
+ }
+#C footer li{
+    border-right: none;
+    border-left: 1px solid gray;
+    padding: 5px;
+}
+#C footer p{
+    font-size: 20px;
+    padding: 15px 0;
+    width: 80vw;
+    margin: 0;
+}
+}
+
+

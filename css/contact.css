@@ -1,0 +1,366 @@
+#B{
+    padding: 0 2em;
+    background: black;
+    display: none;
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-family: 'Grenze Gotisch';
+    overflow-y: hidden;
+    height: 170vh;
+}
+
+#B #B1{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+#B div{
+    width: 485px;
+    overflow: hidden;
+}
+
+#B #backSlide{
+    display: flex;
+    width: 2500px;
+    position: relative;
+    animation: slider 15s linear infinite backwards;
+}
+
+#B #backSlide img{
+    width: 500px;
+    height: 400px;
+    
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -500px;
+    }
+    45% {
+        left: -500px;
+    }
+    50% {
+        left: -1000px;
+    }
+    70%{
+        left: -1000px;
+    }
+    75%{
+        left: -1500px;
+    }
+    95% {
+        left: -1500px;
+    }
+    100% {
+        left: -2000px;
+    }
+}
+
+#B main{
+    margin-left: 50px;
+    text-align: center;
+    display: block;
+}
+
+
+#B h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: goldenrod;
+    font-family: 'Changa';
+    letter-spacing: 2px;
+    animation: 2s fadeIn;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+
+/* Pin icon */
+#B #B1 i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    opacity: .7;
+
+}
+
+#B #B1 p{
+    margin-top: 22px;
+  top: 150px;
+  color: white;
+  line-height: 48px;
+  letter-spacing: 3px;
+  display: block;
+  
+  
+  
+}
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+  #B #links{
+     margin-top: 80px;
+     margin-bottom: 80px;
+     display: grid;
+     grid-template-columns: 30% 40% 30%;
+     font-family: 'Changa';
+  }
+
+  #B #links h3{
+    color: goldenrod;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+  #B #links p{
+    line-height: 48px;
+    letter-spacing: 3px;
+  }
+
+  
+  #B #links a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  @media only screen and (max-width: 1148px) and (min-width: 850px) {
+
+    #B{
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        padding-left: 15px;
+        height: 200vh;
+
+    }
+
+    #B div{
+        margin-left: 10%;
+    }
+
+    #B #B1 h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #B #B1 p{
+        margin-left: 30px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+
+    #B{
+        font-size: 25px;
+        line-height: 28px;
+        text-align: center;
+        padding-left: 0;
+        height: 223vh;
+    }
+#B #B1{
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+ #B #B1 h1{
+     font-size: 40px;
+     line-height: 50px;
+     margin-bottom: -2%;
+ }
+
+ #B #B1 i{
+    font-size: 15px;
+}
+ #B #B1 p{
+   margin-top: 10px;
+}
+
+#B div{
+    width: 100vw;
+    overflow: hidden;
+    margin-left: 10%;
+    
+}
+
+#B #backSlide{
+    margin: 50px 0;
+    height: 42vh;
+    width: 360vw;
+    position: relative;
+    animation: slider 15s linear infinite backwards;
+  
+}
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: -5vw;
+    }
+    25% {
+        left: -90vw;
+    }
+    45% {
+        left: -90vw;
+    }
+    50% {
+        left: -180vw;
+    }
+    70%{
+        left: -180vw;
+    }
+    75%{
+        left: -270vw;
+    }
+    95% {
+        left: -270vw;
+    }
+    100% {
+        left: -350vw;
+    }
+}
+
+#B #backSlide img{
+    width: 87vw;
+    height: 50vh;
+    
+}
+
+
+#B #links{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Inconsolata';
+    margin-left: 30px;
+    color: gray;
+ }
+
+ #B #links a{
+     color: ghostwhite;
+     font-size: 20px;
+     
+ }
+
+ #B #email #p{
+    letter-spacing: 3px;
+    line-height: 30px;
+    width: 150px;
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 5px;
+
+ }
+
+#B footer{
+    margin-left: 28px;
+}
+
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    #B{
+        height: 265vh;
+        overflow-y: hidden;
+    }
+
+    #B div{
+        margin-left: 10%;
+    }
+
+    #B #B1 i{
+        visibility: visible;
+    }
+    #B #B1 p{
+        line-height: 22px;
+        font-size: 22px;
+    
+    }
+
+    #B #links{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-family: 'Inconsolata';
+        display: block;
+        margin-left: 10%;
+        color: gray;
+        padding: 0 50px;
+        
+     }
+
+
+     #B #B1 h1{
+        line-height: 50px;
+     }
+
+     #B #links h3{
+        font-size: 35px;
+     }
+    
+     #B #links address{
+        margin-bottom: 60px;
+     }
+     #B #links p{
+      
+        line-height: 20px;
+        font-size: 18px;
+     }
+     #B #links p a{
+        line-height: 35px;
+       
+      
+     }
+
+     #B #call{
+        margin-bottom: 60px;
+     }
+
+     #B #email #p{
+        letter-spacing: 3px;
+        line-height: 20px;
+        font-size: 18px;
+        width: auto;
+        display: block;
+        overflow: hidden;
+        word-wrap: break-word;
+        padding: 5px;
+        
+    
+     }
+
+     #B footer{
+         margin-left: 10%;
+     }
+     #B ul{
+        display: block;
+          word-wrap: break-word;
+      }
+     #B footer li{
+         border-right: none;
+         border-left: 1px solid gray;
+         padding: 5px;
+     }
+     #B footer p{
+         font-size: 20px;
+     }
+  }
+
+

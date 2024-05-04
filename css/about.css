@@ -1,0 +1,551 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#A{
+    font-size: 40px;
+    background: black;
+    color: whitesmoke;
+    position: relative;
+    display: none;
+    /* height: 100vh; */
+    text-align: left;
+    overflow-y: hidden;
+    font-family: 'Grenze Gotisch';
+}
+
+/* About us */
+
+#A #Afirst{
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding-left: 60px;
+    
+}
+
+/* Header */
+#A #Afirst h1{
+    font-size: 100px;
+    margin-bottom: 45px;
+    color: goldenrod;
+    font-family: 'Changa';
+    letter-spacing: 2px;
+    animation: 2s fadeIn;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+/* Pin icon */
+#A #Afirst i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    opacity: .7;
+
+}
+
+#A #Afirst section{
+    display: flex;
+   margin-bottom: 90px;
+}
+
+#A #Afirst img{
+    width: 35vw;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+#A #Afirst p{
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    padding-right: 200px;
+    font-size: 40px;
+
+}
+
+/* Vision and mission */
+
+#A #Asecond{
+    display: flex;
+    flex-flow: row ;
+    padding: 0 50px;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 15vw;
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+#A #Athird p{
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
+    
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+    text-align: center;
+    display: block;
+    font-family: 'Oswald';
+}
+
+footer ul{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    font-size: 20px;
+    border: 0.2px solid rgb(101, 100, 100);
+    border-bottom: none;
+}
+
+footer li{
+    list-style-type: none;
+    line-height: 50px; 
+    border-right: 0.2px solid rgb(101, 100, 100);
+}
+
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+footer #footerIcon{
+    color: gray;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+
+footer p{
+    border: 0.2px solid rgb(101, 100, 100);
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+
+
+
+/* Side bar */
+
+
+.nav-sidebar{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    padding: 0;
+    height:100vh;
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-sidebar i{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease;
+    margin-top: 20%;
+    margin-left: 60%;
+    margin-bottom: 0;
+    font-size: 50px;
+    color: goldenrod;
+}
+
+.nav-sidebar ul{
+    padding: 0;
+    font-size: 50px;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: .5s ease;
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+
+/* #mainHead #menuBar, #mainHead .nav-sidebar #menuBarClose */
+
+.nav-sidebar  #menuBarClose{
+    color: red;
+    opacity: 1;
+    position: absolute;
+    margin-right: 5%;
+    font-size: 20px;
+    visibility: visible;
+    display: block;
+    
+}
+
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style-type: none;
+     color: white;
+     font-family: 'Oswald';
+     display: block;
+     text-align: left;
+     margin-left: 5%;
+     visibility: visible;
+     
+}
+
+.nav-sidebar ul li span{
+    font-family: 'Changa';
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    text-align: left;
+    color: gray;
+    font-size: 25px;
+    white-space: nowrap;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-sidebar ul li:hover span{
+    color: goldenrod;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 860px) {
+
+    Side bar times
+    .nav-sidebar i{
+        font-size: 35px;
+        
+    }
+
+
+    /* Something else */
+    #mainHead ul{
+        visibility: hidden;
+    }
+
+    
+/* Side bar */
+
+.nav-sidebar ul{
+    padding-top: 80px;
+    transition: none;
+}
+
+.nav-sidebar ul li{
+    line-height: 48px;
+}
+
+.nav-sidebar ul li span{
+    padding: 0 20px;
+    color: white;
+    font-size: 22px;
+    transition: none;
+    cursor: pointer;
+}
+
+.nav-sidebar ul li:hover span{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+
+
+/* Menu Bar */
+
+
+    #mainHead #menuBar{
+        opacity: 1;
+    }
+
+    /* Main Page */
+
+    #A{
+        overflow-x: auto;
+    }
+
+    #A #Afirst h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #A #Afirst h1 i{
+        font-size: 20px;
+        
+    }
+
+    #A #Afirst img{
+        width: 40vw;
+        margin-bottom: 50px;
+        
+    }
+
+    #A #Afirst section p{
+        display: block;
+        width: 35vw;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    
+/* Vision and mission */
+
+#A #Asecond{
+    font-size: 25px;
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 38px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 20vw;    
+}
+
+
+
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+#A #Athird p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    
+}
+
+#A footer{
+    margin-left: 30px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+      Side bar times
+      .nav-sidebar {
+        padding-top: 50px;
+    }
+
+
+    /* Fixed top Nav Bar */
+
+    #mainHead #horizontalNav{
+        height: 50px;
+    }
+
+    #mainHead #menuBar, #mainHead #menuBarClose{
+        font-size: 35px;
+    }
+
+    /* Side bar */
+.nav-sidebar ul{
+    padding: 0;
+    padding-top: 73px;
+    overflow: hidden;
+    transition: .5s ease;
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+
+.nav-sidebar ul li{
+    line-height: 40px;
+     margin-left: -5%;
+     
+}
+
+.nav-sidebar ul li span{
+    padding: 0 20px;
+    text-align: left;
+    font-size: 20px;
+    white-space: nowrap;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-sidebar ul li:hover span{
+    color: goldenrod;
+    font-size: 23px;
+}
+
+/* Main page */
+
+    #A{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        padding-top: 0;
+              
+    }
+
+    #A #Afirst{
+        font-size: 20px;
+        display: grid;
+        grid-template-rows: auto auto;
+        
+    }
+
+    #A #Afirst h1{
+        word-wrap: break-word;
+        display: block;
+        width: calc(70vw - 10px);
+        margin-top: 15px;
+        font-size: 40px;
+        margin-bottom: 5px;
+        text-align: left;
+        margin-left: calc(10vw - 10px);
+        line-height: 50px;
+    }
+
+    #A #Afirst h1 i{
+        font-size: 15px;
+    }
+    
+    #A #Afirst section{
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-left: calc(1vw - 10px);
+    }
+
+    #A #Afirst img{
+        width: 80vw;
+        margin-bottom: 50px;
+        
+    }
+
+    #A #Afirst section p{
+        display: block;
+        width: 80vw;
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    
+/* Vision and mission */
+
+#A #Asecond{
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 0;
+    
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#A #Asecond p{
+    line-height: 28px;
+    font-size: 25px;
+}
+
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+#A #Athird p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 25px;
+}
+
+#A ul{
+  display: block;
+    word-wrap: break-word;
+}
+
+/* Footer */
+#A footer li{
+    border-right: none;
+    word-wrap: break-word;
+    border-left: 1px solid gray;
+    padding: 5px;
+    line-height: 25px;
+    
+}
+
+#A footer p{
+    font-size: 20px;
+}
+}
+
+
+
+
